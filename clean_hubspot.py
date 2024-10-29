@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import scipy
 
-df_original = pd.read_csv("all-deals.csv")
+df_original = pd.read_csv("data/all-deals.csv")
 df_original = df_original[["Record ID","Amount", "Close Date", "Create Date"]] # 438 X 4
 df_original = df_original.dropna() # 92 X 4
 

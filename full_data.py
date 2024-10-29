@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
 # Load the data
-df_cleaned = pd.read_csv("all-deals.csv")
+df_cleaned = pd.read_csv("data/all-deals.csv")
 
 df_cleaned = df_cleaned.dropna(subset=["Amount"])
 df_cleaned = df_cleaned.dropna(subset=["Create Date"])
