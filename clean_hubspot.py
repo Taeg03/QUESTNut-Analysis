@@ -50,6 +50,7 @@ deal_stage_mappings = {
 merged_df["Deal Stage"] = merged_df["Deal Stage"].replace(deal_stage_mappings)
 print(merged_df["Deal Stage"].value_counts)
 
+merged_df.to_csv("data/sales_info.csv")
 
 # Summary Statistics
 
